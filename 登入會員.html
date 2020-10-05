@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>登入會員</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
@@ -42,13 +42,16 @@
     }
     /* Nav Done *******************************************************/
     .container{
-        margin-top: 220px;
+        margin-top: 170px;
+    }
+    form{
+        border:#E2E2E2 1px solid;
+        background-color: #f9f9f9;
     }
     .signup{
-        color: black;
+        color: white;
         font-weight: 900;
         display: block;
-        margin-top: 80px;
     }
     .signup:hover{
         text-decoration: none;
@@ -56,8 +59,21 @@
     }
     .signupicon{
         display: inline-block;
-        padding: 8px 10px;
-        background-color: #182985;
+        padding: 8px 11px;
+        /* background-color: #182985; */
+        border-radius: 80%;
+        margin-right: 15px;
+    }
+    .signupleft{
+        background-color: #fca652;
+    }
+    .signupright{
+        background-color: #ac4b1c;
+    }
+    .forgeticon{
+        display: inline-block;
+        padding: 8px 12px;
+        /* background-color: #182985; */
         border-radius: 80%;
         margin-right: 15px;
     }
@@ -85,6 +101,7 @@
     }
     small{
         margin-left: 65px;
+        font-weight: 700;
     }
     /* form Done *******************************************************/
     footer{
@@ -99,11 +116,11 @@
         <div class="blue"></div>
         <div class="logo">
             <img src="./img/logo.png" alt="三井logo">
-            <h1>登入三井會員</h1>
+            <h1>登入會員</h1>
         </div>
     </nav>
     <div class="container">
-        <form>
+        <form class="p-4">
             <div class="form-group mx-auto">
                 <label for="login-account">帳號</label><input type="email" class="ml-4" id="login-account" aria-describedby="emailHelp" placeholder="請輸入您的E-mail或手機">
             </div>
@@ -113,12 +130,20 @@
             <small id="emailHelp" class="text-danger">*帳號或密碼輸入錯誤</small><br>
             <button type="submit" value="送出">送出</button>
         </form>
-        <a href="#" class="signup">
-            <span  class="signupicon" style="font-size: 12px; color:white">
-                <i class="fas fa-arrow-right"></i>
-            </span>
-            加入會員
-        </a>
+        <div class="d-flex border border-top-0 justify-content-between ">
+            <a href="#" class="signup signupleft p-2 py-4 w-50">
+                <span  class="signupicon" style="font-size: 16px; color:white">
+                    <i class="fas fa-arrow-right"></i>
+                </span>
+                立即註冊會員
+            </a>
+            <a href="#" class="signup signupright p-2 py-4 w-50 border-left">
+                <span  class="forgeticon" style="font-size: 16px; color:white">
+                    <i class="fas fa-question"></i>
+                </span>
+                忘記密碼?
+            </a>
+        </div>
     </div>
     <footer>
         <P class="pt-4 pl-4 text-white">產品諮詢/客戶服務 : 0809-008-001</P>
