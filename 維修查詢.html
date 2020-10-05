@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/維修查詢.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="blue"></div>
+        <div class="logo">
+            <img src="./img/logo.png" alt="三井logo"><br>
+            <small class=" warn-text text-center m-0">請輸入維修單號或送修人聯絡電話，即可查詢送修進度狀態。</small>
+        </div>
+    </nav>
+    <div class="container">
+        <form>
+            <div class="form-group mx-auto">
+                <label for="fix-phone">電話</label><input type="number" class="ml-4" id="fix-phone" aria-describedby="phoneHelp" placeholder="請輸入送修人手機">
+                <small id="phoneHelp" class="text-danger">*送修人號碼輸入錯誤</small>
+            </div>
+            <p class="text-center">
+                <small class="text-danger mx-auto">或提供</small>
+            </p>
+            <div class="form-group">
+                <label for="fix-page">單號</label><input type="password" class="ml-4 mt-1 mb-0" id="fix-page" aria-describedby="pageHelp" placeholder="請輸入您的維修單號">
+                <small id="pageHelp" class="text-danger">*維修單號輸入錯誤</small><br>
+            </div>
+            <div class="form-group">
+                <label for="fix-number">驗證碼</label><input type="number" class="ml-4 mt-1 mb-0 verification" id="fix-number" placeholder="請輸入驗證碼">
+                <input type="number" style="width: 26%;">
+                <a href="#" class="reload"><i class="fas fa-redo-alt pl-2" style="font-size: 30px; "></i></a>
+            </div>
+            <button type="submit" value="查詢">查詢</button>
+        </form>
+        <div class="use-describe mt-3">
+            <small class="text-danger m-0 ">使用說明:</small>
+            <p>1. 查詢時，請勿輸入「-」或國字或是全形數字等符號。</p>
+            <p>2. 使用室內電話查詢，請含區碼。例如 : 033397933。</p>
+            <p>3. 門市送修次日後，方可查詢維修進度，僅提供2個月內紀錄。</p>
+            <p>4. 本系統僅提供須待休兩日以上的送修進度查詢，門市確認送修當日可</p>
+        </div>
+    </div>
+    <footer>
+        <P class="pt-4 pl-4 text-white">產品諮詢/客戶服務 : 0809-008-001</P>
+        <P class="pl-4 text-white">服務時間:週一到週五9:00~18:00例假日除外</P>
+        <p class="text-white text-center pb-4 mb-0">©三井資訊股份公司</p>   
+    </footer>       
+</body>
+</html>

@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Jhenghei";
+    box-sizing: border-box;
+}
+.logo img{
+    width: 300px;
+}
+
+.top{
+    width: 100%;
+    height: 20px;
+}
+.top .blue{
+    background-color: #173072;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.top .logo{
+    margin: auto;
+    text-align: center;
+    /* margin-top: -10px; */
+}
+.top h1{
+    color: #173072;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 20px;
+}
+.container{
+    padding: 0px 5px;
+}
+/* Nav Done *******************************************************/
+.bread{
+    margin-top: 120px;
+}
+.bread ul{
+    list-style: none;
+    font-size: 14px;
+}
+.home,.home:hover{
+    color: black;
+    text-decoration: none;
+}
+#list-header{
+    position: relative;
+    margin: 0px;
+}
+#list-header::after{
+    content: "";
+    clear: both;
+}
+.list-tab{
+    position: absolute;
+    background-color: #3963ae;
+    z-index: 1;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 1px 5px;
+    font-weight: 900;
+    padding: 10px;
+    margin: 0;
+    border-radius: 15px 15px 0px 0px;
+}
+.list-tabback{
+    position: absolute;
+    background-color: #eae9e9;
+    color: #3963ae;
+    font-weight: 900;
+    padding: 10px;
+    margin: 0;
+    left: 100px;
+    border-radius: 15px 15px 0px 0px;
+}
+.tabBack{
+    background-color: #3963ae;
+    color: white;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 1px 5px;
+    font-weight: 900;
+    padding: 10px;
+    margin: 0;
+    left: 100px;
+    border-radius: 15px 15px 0px 0px;
+}
+.tabFirst{
+    background-color: #eae9e9;
+    color: #3963ae;
+    z-index: 0;
+    font-weight: 900;
+    padding: 10px;
+    margin: 0;
+    border-radius: 15px 15px 0px 0px;
+}
+/* Tab Done **********************************************/
+.selectBar{
+    width: 48%;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: #fff;
+}
+/* SelectBar Done ****************************************/
+.list-body{
+    z-index: 1;
+    margin-top: 0px;
+    background-color: #3963ae;
+    position: absolute;
+    /* width: 99%; */
+    width: 100%;
+    border-radius: 0px 5px 5px 5px ;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 4px 5px;
+}
+.backicon{
+    font-size: 16px;
+    font-weight: 900;
+}
+.list-right{
+    margin-left: auto;
+}
+.list-box{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 4px 5px;
+    width: 100%;
+}
+.fa-mobile-alt{
+    /* margin-left:20px; */
+    padding-left: 1px;
+}
+/* listBody Done ***********************************************************/
+.modal-backdrop{
+    position: absolute;
+    z-index:-1;
+}
+.modal-header{
+    padding:5px !important;
+    background-color: #3963ae;
+    color: white;
+}
+.modal-body{
+    padding: 5px;
+}
+.modal-backdrop{
+    height: 300000000px;
+}
+/* modal Done *******************************************************/
+footer{
+    margin-top: 180px;
+    background-color: #173072;
+    width: 100%;
+    font-weight: 900;
+}

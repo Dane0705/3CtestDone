@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/註冊會員.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    <script src="./js/bootstrap.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="blue"></div>
+        <div class="logo">
+            <img src="./img/logo.png" alt="三井logo">
+            <h1>註冊三井會員</h1>
+        </div>
+    </nav>
+    <div class="container">
+        <form>
+            <div class="form-group mx-auto">
+                <input type="phone" class="ml-4" id="login-phone" aria-describedby="phoneHelp" placeholder="請輸入您的手機號碼">
+            </div>
+            <div class="form-group">
+                <input type="number" class="ml-4 mt-1 verification" id="login-nummber" placeholder="請輸入您的密碼">
+                <input type="number" style="width: 32%;">
+                <a href="#" class="reload"><i class="fas fa-redo-alt pl-2" style="font-size: 30px; "></i></a>
+            </div>
+            <small id="phoneHelp" class="text-danger">*此手機號碼已被註冊</small><br>
+            <button type="submit" value="送出">送出</button>
+        </form>
+    </div>
+    <footer>
+        <P class="pt-4 pl-4 text-white">產品諮詢/客戶服務 : 0809-008-001</P>
+        <P class="pl-4 text-white">服務時間:週一到週五9:00~18:00例假日除外</P>
+        <p class="text-white text-center pb-4 mb-0">©三井資訊股份公司</p>   
+    </footer>       
+</body>
+</html>

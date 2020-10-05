@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/門市據點.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</head>
+<body>
+    <nav class="top">
+        <div class="blue"></div>
+        <div class="logo">
+            <img src="./img/logo.png" alt="三井logo">
+        </div>
+    </nav>
+    <nav class="bread container">
+          <ul class="d-flex m-0 mb-4">
+              <li><a href="#" class="home">首頁></a></li>
+              <li><a href="#" class="order">門市查詢</a></li>
+          </ul>
+          <div class="list">
+                <ul class="d-flex" id="list-header">
+                    <li class="list-tab" id="list-tab"><h5 >所有門市</h5></li>
+                    <li class="list-tabback" id="list-tabback"><h5 >區域查詢</h5></li>
+                </ul>
+              <div class="list-body py-1 " id="list-body">
+                    <div id="areaSearch" class="d-none">
+                        <div class="search px-2 pt-2">
+                            <div class="firstsearch mb-2 d-flex justify-content-between">
+                                <select class="selectBar">
+                                    <option value="北北基地區">北北基地區</option>
+                                </select>
+                                <select class="selectBar">
+                                    <option value="桃竹苗地區">桃竹苗地區</option>
+                                </select>
+                            </div> 
+                            <div class="middlesearch mb-2 d-flex justify-content-between">
+                                <select class="selectBar">
+                                    <option value="中部地區">中部地區</option>
+                                </select>
+                                <select class="selectBar">
+                                    <option value="南部地區">南部地區</option>
+                                </select>
+                            </div>
+                            <div class="lastsearch mb-2 d-flex justify-content-between">
+                                <select class="selectBar">
+                                    <option value="品牌授權維修中心">品牌授權維修中心</option>
+                                </select>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                                <div class="list-left">
+                                    <ul class="list-item">
+                                        <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                        <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                        <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                    </ul>
+                                </div>
+                                <div class="list-right d-flex align-items-center">
+                                    <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                                </div>
+                            </li>
+                            <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                                <div class="list-left">
+                                    <ul class="list-item">
+                                        <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                        <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                        <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                    </ul>
+                                </div>
+                                <div class="list-right d-flex align-items-center">
+                                    <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                                </div>
+                            </li>
+                            <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                                <div class="list-left">
+                                    <ul class="list-item">
+                                        <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                        <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                        <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                    </ul>
+                                </div>
+                                <div class="list-right d-flex align-items-center">
+                                    <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                                </div>
+                            </li>
+                            <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                                <div class="list-left">
+                                    <ul class="list-item">
+                                        <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                        <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                        <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                    </ul>
+                                </div>
+                                <div class="list-right d-flex align-items-center">
+                                    <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                                </div>
+                            </li>
+                            <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                                <div class="list-left">
+                                    <ul class="list-item">
+                                        <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                        <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                        <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                    </ul>
+                                </div>
+                                <div class="list-right d-flex align-items-center">
+                                    <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                                </div>
+                            </li>
+                            <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                                <div class="list-left">
+                                    <ul class="list-item">
+                                        <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                        <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                        <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                    </ul>
+                                </div>
+                                <div class="list-right d-flex align-items-center">
+                                    <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                                </div>
+                            </li>
+                            <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                                <div class="list-left">
+                                    <ul class="list-item">
+                                        <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                        <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                        <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                    </ul>
+                                </div>
+                                <div class="list-right d-flex align-items-center">
+                                    <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                                </div>
+                            </li>
+                            <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                                <div class="list-left">
+                                    <ul class="list-item">
+                                        <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                        <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                        <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                    </ul>
+                                </div>
+                                <div class="list-right d-flex align-items-center">
+                                    <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                                </div>
+                            </li>
+                            <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                                <div class="list-left">
+                                    <ul class="list-item">
+                                        <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                        <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                        <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                    </ul>
+                                </div>
+                                <div class="list-right d-flex align-items-center">
+                                    <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                                </div>
+                            </li>
+                            <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                                <div class="list-left">
+                                    <ul class="list-item">
+                                        <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                        <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                        <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                    </ul>
+                                </div>
+                                <div class="list-right d-flex align-items-center">
+                                    <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                        <nav class="page d-flex justify-content-center">
+                            <ul class="pagination">
+                              <li class="page-item disabled">
+                                <span class="page-link"> < </span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item active" aria-current="page">
+                                <span class="page-link">
+                                  2
+                                  <span class="sr-only">(current)</span>
+                                </span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#"> > </a>
+                              </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- tabSwitch -->
+                    <ul id="allStore">
+                        <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                            <div class="list-left">
+                                <ul class="list-item">
+                                    <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                    <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                    <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                </ul>
+                            </div>
+                            <div class="list-right d-flex align-items-center">
+                                <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                            </div>
+                        </li>
+                        <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                            <div class="list-left">
+                                <ul class="list-item">
+                                    <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                    <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                    <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                </ul>
+                            </div>
+                            <div class="list-right d-flex align-items-center">
+                                <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                            </div>
+                        </li>
+                        <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                            <div class="list-left">
+                                <ul class="list-item">
+                                    <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                    <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                    <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                </ul>
+                            </div>
+                            <div class="list-right d-flex align-items-center">
+                                <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                            </div>
+                        </li>
+                        <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                            <div class="list-left">
+                                <ul class="list-item">
+                                    <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                    <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                    <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                </ul>
+                            </div>
+                            <div class="list-right d-flex align-items-center">
+                                <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                            </div>
+                        </li>
+                        <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                            <div class="list-left">
+                                <ul class="list-item">
+                                    <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                    <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                    <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                </ul>
+                            </div>
+                            <div class="list-right d-flex align-items-center">
+                                <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                            </div>
+                        </li>
+                        <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                            <div class="list-left">
+                                <ul class="list-item">
+                                    <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                    <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                    <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                </ul>
+                            </div>
+                            <div class="list-right d-flex align-items-center">
+                                <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                            </div>
+                        </li>
+                        <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                            <div class="list-left">
+                                <ul class="list-item">
+                                    <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                    <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                    <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                </ul>
+                            </div>
+                            <div class="list-right d-flex align-items-center">
+                                <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                            </div>
+                        </li>
+                        <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                            <div class="list-left">
+                                <ul class="list-item">
+                                    <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                    <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                    <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                </ul>
+                            </div>
+                            <div class="list-right d-flex align-items-center">
+                                <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                            </div>
+                        </li>
+                        <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                            <div class="list-left">
+                                <ul class="list-item">
+                                    <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                    <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                    <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                </ul>
+                            </div>
+                            <div class="list-right d-flex align-items-center">
+                                <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                            </div>
+                        </li>
+                        <li class="list-box py-2 px-1 m-2 d-flex" href="#" data-toggle="modal" data-target="#exampleModal">
+                            <div class="list-left">
+                                <ul class="list-item">
+                                    <li class="pl-1 py-1"><i class="fas fa-store-alt" style="color: #924996;"></i><span class="backicon"> 桃園門市 0.8km</span> </li>
+                                    <li class="pl-1 py-1"><i class="fas fa-map-marker-alt mx-1" style="color:#f5b617 ;"></i><span class="backicon"> 桃園市桃園區中華路51號</span></li>
+                                    <li class="pl-1 py-1"><i class="fas fa-mobile-alt mx-1" style="color:#348acb ;"></i><span class="backicon"> (03)339-7933</span id="call"><i class="fas fa-phone-square-alt pl-2" style="font-size: 16px; color: #81bf2d;"></i><span></span></li>
+                                </ul>
+                            </div>
+                            <div class="list-right d-flex align-items-center">
+                                <img style="width: 50px;" src="https://lh4.googleusercontent.com/vXUuz7veylp4yfYHw9lELgy7gyhKSIj8bhmdkYN7XAWbfRXKMm2D3FhSDfo18oH9KOyZdzNCFuf6XbT-OlVrLXGoKiRK2Rq1tNf9blxX3bHOoy6y0ipIPgCzyRVpRcBftafCZZx9" alt="">
+                            </div>
+                        </li>
+                        <nav class="page d-flex justify-content-center">
+                            <ul class="pagination">
+                              <li class="page-item disabled">
+                                <span class="page-link"> < </span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item active" aria-current="page">
+                                <span class="page-link">
+                                  2
+                                  <span class="sr-only">(current)</span>
+                                </span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#"> > </a>
+                              </li>
+                            </ul>
+                        </nav>
+                    </ul>
+              </div>
+          </div>
+    </nav>
+        <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-center">
+                        <h5 class="modal-title pl-4" id="exampleModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modal-body">
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    <footer>
+        <P class="pt-4 pl-4 text-white">產品諮詢/客戶服務 : 0809-008-001</P>
+        <P class="pl-4 text-white">服務時間:週一到週五9:00~18:00例假日除外</P>
+        <p class="text-white text-center pb-4 m-0">©三井資訊股份公司</p>   
+    </footer>
+    <script src="./js/門市據點.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/註冊表單.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="blue"></div>
+        <h1 class="text-center">會員註冊</h1>
+        <p class="pl-5 pt-3">綁定您的 user id : <span class="userid">J734sfg2sdfxx</span></p>
+        <p class="pl-5 pb-2">您的手機號碼 :<span class="phonenumber"> 0912345678</span></p>
+        <hr>
+    </nav>
+    <div class="container pl-4">
+        <form>
+            <div class="form-group">
+                <label for="login-password">密碼</label><input type="password" class="ml-4 mt-1" id="login-password" aria-describedby="passwordHelp" placeholder="請輸入您的密碼">
+                <small id="emailHelp" class="text-danger">*帳號或密碼輸入錯誤</small>
+            </div>
+            <div class="form-group">
+                <label for="relogin-password">確認密碼</label><input type="password" style="width: 61%;" class="ml-4" id="relogin-password"placeholder="請確認您的密碼">
+            </div>
+            <div class="form-group">
+                <label for="login-name">姓名</label><input type="text" class="ml-4" id="login-name" placeholder="請輸入您的真實姓名">
+            </div>
+            <div class="form-group">
+                <label for="login-email">信箱</label><input type="email" class="ml-4" id="login-email" placeholder="請輸入您的E-mail">
+            </div>
+            <div class="form-group">
+                <label for="login-gender">性別</label><input type="radio" style="width: 30px;height:18px;" class="ml-4" id="male" name="gender" value="male">男<input type="radio" style="width: 30px;height:18px;" class="ml-4" id="female" name="gender" value="female">女
+            </div>
+            <div class="form-group">
+                <label for="login-card">會員卡號</label><input type="number" style="width: 61%;" class="ml-4" id="login-card" placeholder="請輸入您的卡號">
+            </div>
+            <div class="form-group text-center">
+                <input type="checkbox" style="width:20px;" id="login-right">
+                <small class="right">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="right mr-3" data-toggle="modal" data-target="#exampleModal">
+                        我已詳細閱讀 : 三井3C網路會員服務條款
+                    </button>
+                      <!-- Modal -->
+                    <div class="modal fade text-left" id="exampleModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle" style="font-size: 16px;">會員服務條款</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <div data-spy="scroll" data-target="#navbar-example" data-offset="0" 
+                                style="height:300px;overflow:auto; position: relative;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tempora. Maiores laudantium nemo consectetur ut, sed totam eligendi hic perferendis voluptatibus repellat deleniti nisi, fuga debitis placeat similique? Aut ea molestias excepturi atque quam? Tempore aliquam dolores sint error placeat, saepe pariatur, debitis repellendus qui labore sunt dicta in atque?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tempora. Maiores laudantium nemo consectetur ut, sed totam eligendi hic perferendis voluptatibus repellat deleniti nisi, fuga debitis placeat similique? Aut ea molestias excepturi atque quam? Tempore aliquam dolores sint error placeat, saepe pariatur, debitis repellendus qui labore sunt dicta in atque?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tempora. Maiores laudantium nemo consectetur ut, sed totam eligendi hic perferendis voluptatibus repellat deleniti nisi, fuga debitis placeat similique? Aut ea molestias excepturi atque quam? Tempore aliquam dolores sint error placeat, saepe pariatur, debitis repellendus qui labore sunt dicta in atque?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tempora. Maiores laudantium nemo consectetur ut, sed totam eligendi hic perferendis voluptatibus repellat deleniti nisi, fuga debitis placeat similique? Aut ea molestias excepturi atque quam? Tempore aliquam dolores sint error placeat, saepe pariatur, debitis repellendus qui labore sunt dicta in atque?
+                               </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </small>
+            </div>
+            <button type="submit" value="註冊" class="submit">註冊</button>
+        </form>
+    </div>
+    <footer>
+        <P class="pt-4 pl-4 text-white">產品諮詢/客戶服務 : 0809-008-001</P>
+        <P class="pl-4 text-white">服務時間:週一到週五9:00~18:00例假日除外</P>
+        <p class="text-white text-center pb-3 m-0">©三井資訊股份公司</p>   
+    </footer>       
+</body>
+</html>

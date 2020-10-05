@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Jhenghei";
+}
+.logo img{
+    width: 300px;
+}
+nav{
+    width: 100%;
+    height: 20px;
+}
+nav .blue{
+    background-color: #182985;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+nav .logo{
+    margin: auto;
+    text-align: center;
+    /* margin-top: -10px; */
+}
+nav h1{
+    color: #182985;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 20px;
+}
+/* Nav Done *******************************************************/
+.container{
+    margin-top: 160px;
+}
+.signupicon{
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: #182985;
+    border-radius: 80%;
+    margin-right: 15px;
+}
+button{
+    background-color: #182985;
+    display: block;
+    width:120px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 40px;
+}
+.warn-text{
+    color: #182985;
+    font-weight: 700;
+    display: block;
+    padding-top: 20px;
+}
+.verification{
+    width: 34%;
+}
+form input{
+    width: 250px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border:1px rgb(124, 124, 124) solid ;
+}
+form label{
+    font-weight: bolder; 
+    font-size: 20px;
+}
+small{
+    margin-left: 65px;
+    font-weight: 700;
+}
+.reload{
+    display: inline-block;
+    width: 40px;
+    height: 28px;
+    position: relative;
+    color: rgb(124, 124, 124) ;
+}
+.use-describe p{
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+/* form Done *******************************************************/
+footer{
+    background-color: #182985;
+    margin-top: 50px;  
+    font-weight: 900;
+}
