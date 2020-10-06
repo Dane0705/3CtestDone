@@ -18,41 +18,50 @@
         box-sizing: border-box;
     }
     .logo img{
-        width: 300px;
+        width: 50%;
     }
-    nav{
+    header{
         width: 100%;
-        height: 20px;
+        height: 80px;
+        line-height: 80px;
+        position: fixed;
+        background-color: #fff;
+        top: 0;
     }
-    nav .blue{
-        background-color: #182985;
-        width: 100%;
-        height: 20px;
-        margin-bottom: 20px;
-    }
-    .logo img{
-        /* width: 250px; */
-    }
-    nav .logo{
+    header .logo{
         margin: auto;
-        text-align: center;
+        padding-left: 5px;
     }
-    nav h3{
-        color: #182985;
-        font-weight: bold;
-        font-size: 32px;
-        margin-top: 20px;
+    .signup{
+        background-color: #336699;
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color:white;
+        /* font-size: 14px; */
+        text-align: center;
     }
     /* Nav Done *******************************************************/
     .container{
-        margin-top: 170px;
+        margin-top: 20px;
+    }
+    .container h4{
+        color: #182985;
+        font-weight: 900;
+    }
+    .banner{
+        margin-top: 80px;
     }
     form{
-        border:#E2E2E2 1px solid;
-        border-bottom: none;
+        border:#E2E2E2 3px solid;
         background-color: #f9f9f9;
     }
-    .signup{
+    hr{
+        border: rgb(134, 134, 134) 1px dashed;
+    }
+    .forget{
         color: white;
         font-weight: 900;
         display: block;
@@ -71,18 +80,6 @@
         border-radius: 80%;
         margin-right: 8px;
     }
-    .signupleft{
-        background-color: #fca652;
-    }
-    .signupright{
-        background-color: #ac4b1c;
-    }
-    .forgeticon{
-        display: inline-block;
-        padding: 8px 12px;
-        border-radius: 80%;
-        margin-right: 15px;
-    }
     button{
         background-color: #182985;
         display: block;
@@ -92,7 +89,9 @@
         border: none;
         border-radius: 20px;
         margin: auto;
-        margin-top: 40px;
+        margin-top: 30px;
+        font-weight: 900;
+        font-size: 20px;
     }
     form input{
         width: 250px;
@@ -112,48 +111,48 @@
     /* form Done *******************************************************/
     footer{
         background-color: #182985;
-        margin-top: 50px;  
+        margin-top: 16px;  
         font-weight: 900;
     }
 </style>
 </head>
 <body>
-    <nav>
-        <div class="blue"></div>
+    <header>
         <div class="logo">
             <img src="./img/logo.png" alt="三井logo">
-            <h3>登入會員</h3>
         </div>
-    </nav>
+        <div class="signup">
+            註冊會員
+        </div>
+    </header>
+    <div class="banner">
+        <img class="w-100" src="http://www.sanjing3c.com.tw/upimg/ad/TUVNQkVSX0JPTlVTXzE1NjUyNTU2NjU=.jpg" alt="">
+    </div>
     <div class="container">
         <form class="p-4">
+            <h4 class="text-center">登入會員</h4>
             <div class="form-group mx-auto">
-                <label for="login-account">帳號</label><input type="text" class="w-100" id="login-account" aria-describedby="textHelp" placeholder="請輸入您的E-mail或手機">
+                <label for="login-account">帳號</label><input type="text" class="w-100" id="login-account" aria-describedby="textHelp" placeholder="請輸入電子信箱/手機">
             </div>
             <div class="form-group">
-                <label for="login-password">密碼</label><input type="password" class="w-100" id="login-password" placeholder="請輸入您的密碼">
+                <label for="login-password">密碼</label><input type="password" class="w-100" id="login-password" placeholder="請輸入密碼">
             </div>
             <small id="textHelp" class="text-danger ml-0">*帳號或密碼輸入錯誤</small><br>
-            <button type="submit" value="送出">送出</button>
-        </form>
-        <div class="d-flex mb-4 justify-content-between button-group">
-            <a href="#" class="signup signupleft p-2 py-4 w-50">
-                <span  class="signupicon" style="font-size: 16px; color:white">
-                    <i class="fas fa-arrow-right"></i>
-                </span>
-                立即註冊會員
-            </a>
-            <a href="#" class="signup signupright p-2 py-4 w-50">
-                <span  class="forgeticon" style="font-size: 16px; color:white">
+            <a href="#" class="forget mt-4 text-right" style="color:rgb(112, 112, 112)">
+                <!-- <span  class="forgeticon" style="font-size: 10px; color:white">
                     <i class="fas fa-key"></i>
-                </span>
+                </span> -->
                 忘記密碼?
             </a>
-        </div>
-        <p>122121212</p>
-        <p>122121212</p>
-        <p>122121212</p>
+            <button type="submit" value="送出">登入</button>
+        </form>
+        <hr>
     </div>
+    <p class="px-3"> <span class="text-danger">*提醒您，三井3C購物網不會以任何理由要求
+        客戶操作ATM變更訂單付款設定。</span>如接獲疑
+        似詐騙電話，請不要依指示操作。若有任何
+        疑問，請直接與客服聯絡。
+    </p>
     <footer>
         <P class="pt-4 pl-4 text-white">產品諮詢/客戶服務 : 0809-008-001</P>
         <P class="pl-4 text-white">服務時間:週一到週五9:00~18:00例假日除外</P>
