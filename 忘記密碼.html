@@ -12,29 +12,34 @@
     <script src="./js/bootstrap.js"></script>
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <div class="blue"></div>
         <div class="logo">
             <img src="./img/logo.png" alt="三井logo">
             <h1>忘記密碼</h1>
         </div>
-    </nav>
-    <div class="container">
+    </nav> -->
+    <div class="container px-4">
+        <div class="line d-flex">
+            <div class="blue"></div>
+            <div class="pink"></div>
+        </div>
         <form class="p-4">
+            <h4 class="text-center">忘記密碼</h4>
             <div class="form-group mx-auto">
-                <input type="number" class="ml-4" id="login-phone" aria-describedby="phoneHelp" placeholder="請輸入您的手機號碼">
+                <label for="login-phone">電話</label><input type="number" id="login-phone" aria-describedby="phoneHelp" placeholder="請輸入手機號碼">
             </div>
             <div class="form-group">
-                <input type="text" class="ml-4" id="login-nummber" placeholder="請輸入您註冊時的姓名">
+                <label for="login-name">姓名</label><input type="text" class="mb-3" id="login-name" placeholder="請輸入註冊時的姓名">
             </div>
-            <small id="phoneHelp" class="text-danger">*您輸入的號碼或姓名有誤</small><br>
-            <button type="submit" value="發送驗證碼">發送驗證碼</button>
+            <!-- <small id="phoneHelp" class="text-danger">*您輸入的號碼或姓名有誤</small><br> -->
+            <button type="submit" value="取回密碼">取回密碼</button>
         </form>
     </div>
     <footer>
         <P class="pt-4 pl-4 text-white">產品諮詢/客戶服務 : 0809-008-001</P>
         <P class="pl-4 text-white">服務時間:週一到週五9:00~18:00例假日除外</P>
-        <p class="text-white text-center pb-4 m-0">©三井資訊股份公司</p>   
+        <p class="text-white text-center pb-4 mb-0">©三井資訊股份公司</p>   
     </footer>       
 </body>
 </html>
