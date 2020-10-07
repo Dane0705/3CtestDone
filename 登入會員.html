@@ -17,79 +17,124 @@
         font-family: "Microsoft Jhenghei";
         box-sizing: border-box;
     }
+    /* body{
+        background-image: url("./img/unnamed.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    } */
     .logo img{
-        width: 50%;
+        width: 40%;
     }
     header{
         width: 100%;
-        height: 80px;
-        line-height: 80px;
+        height: 60px;
+        line-height: 60px;
         position: fixed;
         background-color: #fff;
         top: 0;
+        border-bottom: rgba(146, 146, 146, 0.719) 2px solid;
     }
     header .logo{
         margin: auto;
-        padding-left: 5px;
+        padding-left: 15px;
     }
-    .signup{
+    /* .signup{
         background-color: #336699;
-        height: 80px;
+        height: 60px;
         width: 80px;
         position: absolute;
         top: 0;
         right: 0;
         color:white;
-        /* font-size: 14px; */
+        font-size: 14px;
+        font-weight: 900;
         text-align: center;
+    } */
+    .signup{
+        display: block;
+        background-color: #fc804c;
+        color:white;
+        font-size: 20px;
+        font-weight: 900;
+        width: 100%;
+        /* width:120px; */
+        border-radius: 12px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    body{
+        background-color: #f9f9f9;
     }
     /* Nav Done *******************************************************/
     .container{
-        margin-top: 20px;
+        /* margin-top: 80px; */
+        margin-top: -30px;
     }
     .container h4{
         color: #182985;
         font-weight: 900;
     }
     .banner{
-        margin-top: 80px;
+        margin-top: 60px;
     }
     form{
-        border:#E2E2E2 3px solid;
-        background-color: #f9f9f9;
+        border:#E2E2E2 1px solid;
+        border-top: none;
+        background-color: #fff;
+
+        /* box-shadow: 2px 4px 10px black; */
+    }
+    .blue{
+        width: 20%;
+        height: 6px;
+        background-color: #182985;
+    }
+    .pink{
+        width: 80%;
+        height: 6px;
+        background-color: #fa26a0;
     }
     hr{
-        border: rgb(134, 134, 134) 1px dashed;
+        overflow: inherit;
+        position: relative;
+        margin-top: 30px;
+        width: 100%;
+        border-color: rgba(0, 0, 0, 0.288);
+    }
+    hr::after{
+        content: "or";
+        text-align: center;
+        position: absolute;
+        top: 0px;
+        width: 50px;
+        color: rgba(0, 0, 0, 0.288);
+        background: #F9F9F9;
+        font-weight: 400;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .forget{
         color: white;
         font-weight: 900;
         display: block;
+        font-size: 16px;
     }
     .button-group{
         border:#E2E2E2 1px solid;
         border-top: none;
     }
-    .signup:hover{
-        text-decoration: none;
-        color: black;
-    }
-    .signupicon{
-        display: inline-block;
-        padding: 8px 11px;
-        border-radius: 80%;
-        margin-right: 8px;
-    }
     button{
         background-color: #182985;
         display: block;
-        width:120px;
+        /* width:120px; */
+        width: 100%;
         height: 40px;
         color: white;
         border: none;
-        border-radius: 20px;
+        /* border-radius: 10px; */
+        border-radius: 12px;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 20px;
         font-weight: 900;
         font-size: 20px;
     }
@@ -102,16 +147,26 @@
     }
     form label{
         font-weight: bolder; 
-        font-size: 20px;
+        font-size: 16px;
+    }
+    input{
+        padding: 5px 8px !important;
+    }
+    input::-webkit-input-placeholder{
+        font-size: 14px ;    
+        line-height: 1em;   
     }
     small{
         margin-left: 65px;
         font-weight: 700;
     }
+    .warning{
+        line-height: 24px;
+    }
     /* form Done *******************************************************/
     footer{
         background-color: #182985;
-        margin-top: 16px;  
+        margin-top: 20px;  
         font-weight: 900;
     }
 </style>
@@ -121,14 +176,18 @@
         <div class="logo">
             <img src="./img/logo.png" alt="三井logo">
         </div>
-        <div class="signup">
+        <!-- <a href="#" class="signup">
             註冊會員
-        </div>
+        </a> -->
     </header>
     <div class="banner">
-        <img class="w-100" src="http://www.sanjing3c.com.tw/upimg/ad/TUVNQkVSX0JPTlVTXzE1NjUyNTU2NjU=.jpg" alt="">
+        <img class="w-100" src="https://www.sanjing3c.com.tw/img.php?img=/userfiles/202010/promotion/HH-MB.png" alt="">
     </div>
-    <div class="container">
+    <div class="container px-4">
+        <div class="line d-flex">
+            <div class="blue"></div>
+            <div class="pink"></div>
+        </div>
         <form class="p-4">
             <h4 class="text-center">登入會員</h4>
             <div class="form-group mx-auto">
@@ -145,14 +204,17 @@
                 忘記密碼?
             </a>
             <button type="submit" value="送出">登入</button>
+            <hr>
+            <a href="#" class="signup text-center py-2 px-3">
+                註冊會員
+            </a>
         </form>
-        <hr>
     </div>
-    <p class="px-3"> <span class="text-danger">*提醒您，三井3C購物網不會以任何理由要求
+    <!-- <p class="px-3 warning"> <span class="text-danger">*提醒您，三井3C購物網不會以任何理由要求
         客戶操作ATM變更訂單付款設定。</span>如接獲疑
         似詐騙電話，請不要依指示操作。若有任何
         疑問，請直接與客服聯絡。
-    </p>
+    </p> -->
     <footer>
         <P class="pt-4 pl-4 text-white">產品諮詢/客戶服務 : 0809-008-001</P>
         <P class="pl-4 text-white">服務時間:週一到週五9:00~18:00例假日除外</P>
