@@ -169,6 +169,52 @@
         line-height: 24px;
     }
     /* form Done *******************************************************/
+	.con{
+		width:100%;
+		height:100%;
+		background:rgba(0, 0, 0, 0.514);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+	}
+	#msg{
+        display: flex;
+        justify-content: center;
+        margin-top: 160px;
+	}
+	.info_message {
+	    color: #000;
+	    background:#fff;
+	    height: 170px;
+	    display: inline-block;
+	    border-radius:5px;
+	}
+    #alertTitle{
+        background-color:  #182985;
+        color: white;
+        font-weight: 900;
+        font-size: 18px;
+    }
+	#alertSure{
+	    width: 90px;
+	    height: 30px;
+        border-radius: 12px;
+	    text-align: center;
+	    line-height: 30px;
+	    background: #182985;
+	    color: #fff;
+	}
+	.detail_message{
+		width:350px;
+		height:115px;
+		text-align:center;
+		overflow: hidden;
+		display:inline-block;
+		padding:10px;
+	}
+    /* alert Done *******************************************************/
     footer{
         background-color: #182985;
         margin-top: 20px;  
@@ -201,11 +247,7 @@
             <div class="form-group">
                 <label for="login-password">密碼</label><input type="password" class="w-100" id="login-password" placeholder="請輸入密碼">
             </div>
-            <small id="textHelp" class="text-danger ml-0">*帳號或密碼輸入錯誤</small><br>
-            <a href="#" class="forget mt-4 text-right" style="color:rgb(112, 112, 112)">
-                <!-- <span  class="forgeticon" style="font-size: 10px; color:white">
-                    <i class="fas fa-key"></i>
-                </span> -->
+            <a href="#" class="forget mt-5 text-right" style="color:rgb(112, 112, 112)">
                 忘記密碼?
             </a>
             <button type="submit" value="送出">登入</button>
@@ -215,15 +257,36 @@
             </a>
         </form>
     </div>
-    <!-- <p class="px-3 warning"> <span class="text-danger">*提醒您，三井3C購物網不會以任何理由要求
-        客戶操作ATM變更訂單付款設定。</span>如接獲疑
-        似詐騙電話，請不要依指示操作。若有任何
-        疑問，請直接與客服聯絡。
-    </p> -->
     <footer>
         <P class="pt-4 pl-4 text-white">產品諮詢/客戶服務 : 0809-008-001</P>
         <P class="pl-4 text-white">服務時間:週一到週五9:00~18:00例假日除外</P>
         <p class="text-white text-center pb-4 mb-0">©三井資訊股份公司</p>   
-    </footer>       
+    </footer>
+    <script>
+        function alert(){
+            var alert=`
+                <div class="con">
+                    <div id='msg'>
+                        <div class="info_message">
+                            <div id="alertTitle" class="text-center py-1 mb-3">訊息</div> 
+                            <span class="detail_message mt-1">
+                                <i class="fas fa-exclamation-circle mr-2" style="color:#182985"></i>您的帳號或密碼輸入錯誤
+                            <div id="alertSure" class="mt-4 mx-auto">確定</div>
+                            </span>
+                        </div>
+                    </div>
+                </div> 
+            `;
+            $('body').append(alert);
+            clearmsg();
+        }
+        function clearmsg(){
+            $('#alertSure').click(function(){
+                $("#msg").remove();
+                $('.con').remove();
+            });
+        };
+        alert();
+    </script>      
 </body>
 </html>
