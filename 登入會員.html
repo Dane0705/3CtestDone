@@ -18,7 +18,7 @@
         box-sizing: border-box;
     }
     body{
-        background-image: url("./img/unnamed.png");
+        background-image: url("../img/unnamed.png");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -53,39 +53,53 @@
         font-weight: 900;
         text-align: center;
     } */
-    body{
-        background-color: #f9f9f9;
-    }
     /* Nav Done *******************************************************/
     .container{
-        /* margin-top: 80px; */
-        /* margin-top: -30px; */
         margin-top: 20px;
-
     }
-    .container h4{
-        color: #182985;
+    .a-group{
+        font-size: 0px;
+        background-color: rgb(224, 224, 224)
+    }
+    .a-group a:hover{
+        color: white;
+        text-decoration: none;
+    }
+    .loginBtn{
+        color: white;
+        background-color: #fc804c;
         font-weight: 900;
+        display: inline-block;
+        font-size: 18px;
+        width: 35%;
+        border-radius: 0px 20px 0px 0px ;
+        box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.479);
     }
-    .banner{
-        margin-top: 60px;
+    .forgetBtn{
+        color:  #182985;
+        font-weight: 900;
+        display: inline-block;
+        font-size: 18px;
+        width: 35%;
     }
     form{
         border:#E2E2E2 1px solid;
         border-top: none;
         background-color: #fff;
-        box-shadow:3px 6px 15px rgba(0, 0, 0, 0.781);
+        box-shadow:3px 8px 15px rgba(0, 0, 0, 0.781);
     }
     .blue{
-        width: 20%;
+        width: 100%;
         height: 6px;
-        background-color: #182985;
+        background-color:#fc804c;
+        position: absolute;
+        top: 60px;
     }
-    .pink{
+    /* .pink{
         width: 80%;
         height: 6px;
         background-color: #fa26a0;
-    }
+    } */
     hr{
         overflow: inherit;
         position: relative;
@@ -105,12 +119,12 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .forget{
-        color: white;
+    /* .forget{
+        color: rgb(112, 112, 112);
         font-weight: 900;
         display: block;
         font-size: 16px;
-    }
+    } */
     button{
         background-color: #182985;
         display: block;
@@ -120,7 +134,7 @@
         border: none;
         border-radius: 12px;
         margin: auto;
-        margin-top: 20px;
+        margin-top: 70px;
         font-weight: 900;
         font-size: 20px;
     }
@@ -220,20 +234,42 @@
     </div> -->
     <div class="container px-4">
         <div class="line d-flex">
-            <div class="blue"></div>
-            <div class="pink"></div>
+ 
+            <!-- <div class="pink"></div> -->
         </div>
-        <form class="p-4">
-            <h4 class="text-center">登入會員</h4>
+        <div class="a-group">
+            <a class="mb-0 py-2 text-center loginBtn" id="loginBtn">登入會員</a>
+            <div class="blue"></div>
+            <a class="mb-0 py-2 text-center forgetBtn" id="forgetBtn">忘記密碼</a>
+        </div>
+        <form class="px-4 pt-3 pb-4" id="formlogin">
             <div class="form-group mx-auto">
                 <label for="login-account">帳號</label><input type="text" class="w-100" id="login-account" aria-describedby="textHelp" placeholder="請輸入電子信箱/手機">
             </div>
             <div class="form-group">
                 <label for="login-password">密碼</label><input type="password" class="w-100" id="login-password" placeholder="請輸入密碼">
             </div>
-            <a href="https://dane0705.github.io/3CtestDone/%E5%BF%98%E8%A8%98%E5%AF%86%E7%A2%BC.html" class="forget mt-5 text-right" style="color:rgb(112, 112, 112)">
+            <!-- <a href="#" class="forget mt-5 text-right">
                 忘記密碼?
+            </a> -->
+            <button type="submit" value="送出">登入</button>
+            <hr>
+            <a href="#" class="signup text-center">
+                註冊會員
             </a>
+        </form>
+        <form class="px-4 pt-3 pb-4 d-none" id="formforget">
+            <div class="form-group mx-auto">
+                <label for="login-account">電話</label>
+                <input type="text" class="w-100" id="login-account" aria-describedby="textHelp" placeholder="請輸入手機號碼">
+            </div>
+            <div class="form-group">
+                <label for="login-password">姓名</label>
+                <input type="password" class="w-100" id="login-password" placeholder="請輸入註冊時的姓名">
+            </div>
+            <!-- <a href="#" class="forget mt-5 text-right">
+                忘記密碼?
+            </a> -->
             <button type="submit" value="送出">登入</button>
             <hr>
             <a href="#" class="signup text-center">
@@ -254,7 +290,7 @@
                         <div class="info_message">
                             <div id="alertTitle" class="text-center py-1 mb-3">訊息</div> 
                             <span class="detail_message mt-1">
-                                <i class="fas fa-exclamation-circle mr-2" style="color:#182985"></i>您的帳號或密碼輸入錯誤
+                                <i class="fas fa-exclamation-circle mr-2" style="color:red"></i>您的帳號或密碼輸入錯誤
                             <div id="alertSure" class="mt-4 mx-auto">確定</div>
                             </span>
                         </div>
@@ -270,7 +306,42 @@
                 $('.con').remove();
             });
         };
-        alert();
-    </script>      
+        // alert();
+    </script>  
+    <script>
+        let forget = document.getElementById('forgetBtn');
+        let login = document.getElementById('loginBtn');
+        forget.addEventListener('click',forgetFun,false);
+        login.addEventListener('click',loginFun,false);
+        function forgetFun(){
+            // change Btn class
+            forget.classList.remove('forgetBtn');
+            forget.classList.add('loginBtn');
+            login.classList.remove('loginBtn');
+            login.classList.add('forgetBtn');
+            // remove & add
+            let formlogin = document.getElementById('formlogin');
+            formlogin.classList.add('d-none');
+            formlogin.classList.remove('d-block');
+            formforget.classList.remove('d-none');
+        }
+        function loginFun(){
+            // chamge Btn
+            forget.classList.remove('loginBtn');
+            forget.classList.add('forgetBtn');
+            login.classList.remove('loginBtn');
+            login.classList.add('loginBtn');
+            // remove & add
+            let formforget = document.getElementById('formforget');
+            formforget.classList.add('d-none');
+            formlogin.classList.add('d-block');
+        }
+    </script>    
+    <script>
+        $(function(){
+        let w = $('#formlogin').width() ;
+        $('.blue').width(w+50);
+    })
+    </script>
 </body>
 </html>
